@@ -1,0 +1,182 @@
+# Fiche Oral Compétence 4 : Gérer des données de l'information
+
+
+## 1. Introduction (2 minutes)
+
+### Présentation
+- **Nom** : Lucas Leprevost
+- **Formation** : BUT Informatique
+- **Objectif** : Présenter la compétence 4 "Gérer des données de l'information"
+
+### Définition de la compétence
+- Concevoir et manipuler des bases de données relationnelles
+- Maîtriser les modèles de données (MCD, schéma relationnel)
+- Effectuer des requêtes efficaces en SQL
+- Assurer la cohérence et la qualité des données
+
+---
+
+## 2. Les 6 composantes de la compétence (8 minutes)
+
+### 🔄 **Composante 1 : Mise à jour de base de données**
+- **Compétence** : Mettre à jour de manière pertinente une BD relationnelle
+- **Projet** : SAE 2.04 - Gestion de compétitions de ski
+- **Exemple concret** : 
+  - Scripts d'insertion de données (skieurs, compétitions, classements)
+  - Gestion des contraintes d'intégrité
+  - Mise à jour cohérente des tables liées
+- **Acquis** : ✅ Maîtrisé
+
+### 🔍 **Composante 2 : Interrogations efficaces**
+- **Compétence** : Effectuer des interrogations efficaces et bien afficher les résultats
+- **Projet** : SAE 2.04
+- **Exemple concret** :
+  - Requêtes SQL complexes avec jointures multiples
+  - Optimisation des performances de requêtes
+  - Formatage et présentation des résultats
+- **Acquis** : ✅ Maîtrisé
+
+### 🏗️ **Composante 3 : Conception de BD**
+- **Compétence** : Concevoir la BD en analysant le cahier des charges
+- **Projet** : SAE 2.04
+- **Exemple concret** :
+  - Analyse du contexte métier (compétitions de ski)
+  - Élaboration du MCD (entités, associations, cardinalités)
+  - Transformation MCD → Schéma relationnel
+- **Acquis** : ✅ Maîtrisé
+
+### ✅ **Composante 4 : Cohérence et qualité**
+- **Compétence** : Assurer la cohérence et la qualité de la BD
+- **Projet** : SAE 2.04
+- **Exemple concret** :
+  - Respect des contraintes d'intégrité référentielle
+  - Validation des données insérées
+  - Base de données opérationnelle conforme au MCD
+- **Acquis** : ✅ Maîtrisé
+
+### 📊 **Composante 5 : Modèles de données**
+- **Compétence** : S'appuyer sur les modèles de données utilisés
+- **Projet** : SAE 2.04
+- **Exemple concret** :
+  - MCD clairement défini et documenté
+  - Schéma relationnel correctement implémenté
+  - Respect des règles de normalisation
+- **Acquis** : ✅ Maîtrisé
+
+### 🎯 **Composante 6 : Autocritique et adaptabilité**
+- **Compétence** : Identifier forces et limites
+- **État** : 🔄 En cours d'acquisition
+- **Démarche** : Développement de l'analyse critique de mes choix de conception
+
+---
+
+## 3. Projet phare : SAE 2.04 (4 minutes)
+
+### 🎿 **Gestion de compétitions de ski**
+
+#### **Contexte et objectifs** (1 min)
+- **Problématique** : Gérer les données d'une entreprise de compétitions de ski
+- **Enjeux** : Organiser skieurs, compétitions, classements
+- **Technologies** : PostgreSQL, SQL, Algèbre relationnelle
+
+#### **Démarche méthodologique** (1.5 min)
+1. **Analyse du besoin** : Compréhension du domaine métier
+2. **Modélisation conceptuelle** : Création du MCD
+   - Entités : SKIEUR, COMPETITION, CLASSEMENT
+   - Associations avec cardinalités
+3. **Implémentation** : 
+   - Transformation en schéma relationnel
+   - Création des tables PostgreSQL
+   - Insertion des données de test
+
+#### **Réalisations techniques** (1.5 min)
+- **Schéma relationnel** : 3 tables principales avec clés étrangères
+- **Requêtes complexes** :
+  - Algèbre relationnelle : π, σ, ⨝ (projection, sélection, jointure)
+  - SQL : Jointures multiples, filtres avancés
+- **Exemples concrets** :
+  ```sql
+  -- Skieurs autrichiens de la compétition Saalbach-2025
+  SELECT nomSkieur, prénomSkieur, rang 
+  FROM SKIEUR S, COMPETITION C, CLASSEMENT CL
+  WHERE S.idSkieur = CL.idSkieur 
+    AND C.idCompétition = CL.idCompétition
+    AND C.nomCompétition = 'Saalbach-2025'
+    AND S.nationalité = 'Autrichien';
+  ```
+
+### **Résultats obtenus**
+- Base de données opérationnelle et cohérente
+- 15+ requêtes fonctionnelles en SQL et algèbre relationnelle
+- Respect des contraintes d'intégrité
+- Optimisation des performances de requêtes
+
+---
+
+## 4. Conclusion et perspectives (1 minute)
+
+### Bilan des acquis
+- ✅ 5 composantes maîtrisées sur 6
+- ✅ Solides bases en conception de BD
+- ✅ Maîtrise de PostgreSQL et SQL
+- 🔄 Travail en cours sur l'analyse critique
+
+### Perspectives d'approfondissement
+- Bases de données NoSQL
+- Optimisation avancée des requêtes
+- Administration de bases de données
+- Big Data et entrepôts de données
+
+---
+
+## 📋 Points clés à retenir
+
+### Compétences techniques maîtrisées
+- **Modélisation** : MCD, schéma relationnel, normalisation
+- **SQL** : Requêtes complexes, jointures, optimisation
+- **PostgreSQL** : Création, gestion, maintenance de BD
+- **Algèbre relationnelle** : Formalisation mathématique des requêtes
+
+### Méthodologie appliquée
+1. **Analyse** → Compréhension du besoin métier
+2. **Conception** → MCD et schéma relationnel
+3. **Implémentation** → Scripts SQL et PostgreSQL
+4. **Validation** → Tests et vérification de cohérence
+
+### Outils maîtrisés
+- PostgreSQL (SGBD)
+- SQL (langage de requête)  
+- Outils de modélisation (MCD)
+- Scripts d'initialisation et de test
+
+---
+
+## 🎤 Conseils pour l'oral
+
+### Démonstration pratique
+- **Montrez votre MCD** : Expliquez les entités et relations
+- **Présentez une requête complexe** : Détaillez la logique
+- **Montrez les résultats** : Prouvez que ça fonctionne
+
+### Vocabulaire technique à maîtriser
+- **MCD** : Modèle Conceptuel de Données
+- **Clé primaire/étrangère** : Contraintes d'intégrité
+- **Jointure** : Liaison entre tables
+- **Normalisation** : Optimisation de la structure
+
+### Points d'accroche
+- *"Les données sont le pétrole du 21e siècle"*
+- *"Une BD mal conçue = une application inefficace"*
+- *"La modélisation, c'est prévoir pour mieux construire"*
+
+### Gestion du timing
+- **2 min** : Introduction et enjeux des BD
+- **8 min** : Les 6 composantes (1min20 chacune)
+- **4 min** : Projet SAE 2.04 en détail
+- **1 min** : Perspectives et conclusion
+
+### Questions probables à anticiper
+- *"Pourquoi PostgreSQL plutôt qu'un autre SGBD ?"*
+- *"Comment optimisez-vous une requête lente ?"*
+- *"Quelle est la différence entre MCD et schéma relationnel ?"*
+- *"Comment gérez-vous l'intégrité des données ?"*

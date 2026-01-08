@@ -1,0 +1,133 @@
+Fiche Oral Compétence 2 : Optimiser des applications informatiques
+
+1. Introduction (2 minutes)
+Présentation
+Nom : Lucas Leprevost
+Formation : BUT Informatique
+Objectif : Présenter la compétence 2 "Optimiser des applications informatiques"
+Définition de la compétence
+Analyser les performances d'une application
+Comparer et optimiser les algorithmes
+Utiliser des outils mathématiques pour l'informatique
+Valider et justifier les choix techniques
+
+
+2. Les 6 composantes de la compétence (8 minutes)
+🔍 Composante 1 : Analyser un problème avec méthode
+Compétence : Formaliser et modéliser des situations complexes
+Projet : SAE 1.02 & SAE 2.01
+Exemple concret :
+Diagrammes UML pour la gestion de projet MPM
+Schémas mémoire pour les algorithmes de tri
+Acquis : ✅ Maîtrisé
+
+
+⚡ Composante 2 : Comparer des algorithmes
+Compétence : Recenser et comparer les algorithmes classiques
+Projet : SAE 1.02 - Comparaison d'algorithmes
+Exemple concret :
+Tri à bulles vs tri par insertion
+Benchmarking avec System.nanoTime()
+Analyse des performances selon les jeux de données
+
+
+Acquis : ✅ Maîtrisé
+📊 Composante 3 : Outils mathématiques
+Compétence : Formaliser et mettre en œuvre des mathématiques
+Projet : TP8 - Emballages industriels
+Exemple concret :
+Calculs de volumes (cube, cylindre, sphère)
+Calculs de surfaces pour la peinture
+Formules géométriques en Java
+Acquis : ✅ Maîtrisé
+
+
+🧠 Composante 4 : Schémas de raisonnement
+Compétence : S'appuyer sur des modèles de raisonnement
+Projets : TP8 & SAE 2.01
+Exemple concret :
+Graphes MPM pour l'ordonnancement
+Schémas mémoire pour le polymorphisme
+Diagrammes de flux algorithmiques
+Acquis : ✅ Maîtrisé
+
+
+✅ Composante 5 : Justifier et valider
+Compétence : Justifier les choix et valider les résultats
+Projet : SAE 2.01
+Exemple concret :
+Scénarios de test pour l'application MPM
+Validation des calculs de dates
+Documentation des choix de conception
+Acquis : ✅ Maîtrisé
+
+
+🎯 Composante 6 : Autocritique et adaptabilité
+Compétence : Identifier forces et limites
+État : 🔄 En cours d'acquisition
+Démarche : Développement de la capacité à analyser ses propres apprentissages
+
+
+3. Projets phares (4 minutes)
+📈 SAE 1.02 - Comparaison d'algorithmes (2 min)
+Objectif : Comparer les performances des algorithmes de tri
+Technologies : Java, benchmarking
+Résultats :
+Tri à bulles : O(n²) - Simple mais inefficace
+Tri par insertion : O(n²) - Efficace sur petits tableaux
+Optimisation de l'application d'horloge
+Apprentissage : Importance du choix algorithmique selon le contexte
+🏗️ SAE 2.01 - Application MPM (2 min)
+Objectif : Optimiser la gestion de projet
+Technologies : Java, UML, gestion de fichiers
+Résultats :
+Calcul automatique des dates optimales
+Identification des tâches critiques
+Interface utilisateur intuitive
+
+
+Apprentissage : Conception orientée objet et validation algorithmique
+4. Conclusion et perspectives (1 minute)
+Bilan des acquis
+✅ 5 composantes maîtrisées sur 6
+✅ Solides bases en analyse algorithmique
+✅ Capacité à optimiser les performances
+🔄 Travail en cours sur l'autocritique
+Perspectives d'amélioration
+Approfondissement des algorithmes avancés
+Développement de l'analyse critique
+Application à des projets plus complexes
+
+📋 Points clés à retenir
+Techniques maîtrisées
+Analyse comparative d'algorithmes
+Modélisation UML
+Benchmarking et mesure de performances
+Mathématiques appliquées à l'informatique
+Soft skills développées
+Méthode d'analyse
+Rigueur scientifique
+Capacité de synthèse
+Présentation de résultats
+Outils utilisés
+Java
+UML
+Git
+Outils de mesure de performance
+
+🎤 Conseils pour l'oral
+Structure de présentation
+Accroche : "L'optimisation, c'est faire mieux avec moins"
+Exemples concrets : Toujours illustrer avec vos projets
+Chiffres : Mentionner les gains de performance obtenus
+Transition fluide entre les composantes
+Gestion du timing
+2 min : Introduction et contexte
+8 min : Développement des 6 composantes (1min20 chacune)
+4 min : Projets détaillés
+1 min : Conclusion et perspectives
+Supports visuels recommandés
+Graphiques de performance des algorithmes
+Diagrammes UML
+Captures d'écran des résultats
+Schémas de complexité algorithmique

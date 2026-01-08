@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lucas Leprevost - Portfolio - SAE 2.04</title>
+	<link rel="stylesheet" href="../../styles.css">
+	<link rel="stylesheet" href="sae2.04.css">
+</head>
+<body>
+	<header class="navbar">
+		<div class="logo">Portfolio</div>
+		<nav>
+			<a href="../../index.html">Accueil</a>
+			<a href="../../index.html">Projets</a>
+			<a href="../../index.html">Compétences</a>
+		</nav>
+		<div class="contact">Lucas Leprevost</div>
+	</header>
+
+	<main>
+		<section class="presentation">
+			<h2>SAE 2.04 - Gestion de Base de Données</h2>
+			<p class="section-intro">
+				Projet de gestion de base de données pour une entreprise de compétitions de ski. Réalisation du schéma conceptuel, création des tables, insertion des données et rédaction de requêtes en algèbre relationnelle et SQL sous PostgreSQL.
+			</p>
+			<div class="project-content">
+
+				<article class="description-section">
+					<h3>Description du projet</h3>
+					<p>
+						Ce projet avait pour objectif de concevoir et manipuler une base de données relationnelle pour gérer des compétitions de ski. Il a permis de mettre en pratique la modélisation conceptuelle (MCD), la création de tables, l’initialisation des données et la formulation de requêtes complexes.
+					</p>
+				</article>
+
+				<article class="technical-section">
+					<h3>Aspects techniques</h3>
+					<div class="cards">
+						<div class="card">
+							<h4>Technologies utilisées</h4>
+							<ul class="tech-list">
+								<li>PostgreSQL</li>
+								<li>SQL</li>
+								<li>Algèbre relationnelle</li>
+							</ul>
+						</div>
+						<div class="card">
+							<h4>Fonctionnalités clés</h4>
+							<ul class="tech-list">
+								<li>Conception du MCD</li>
+								<li>Création et initialisation des tables</li>
+								<li>Insertion de données</li>
+								<li>Requêtes avancées (jointures, sélections, projections)</li>
+							</ul>
+						</div>
+						<div class="card">
+							<h4>Structure du projet</h4>
+							<ul class="tech-list">
+								<li>Schéma de la base de données</li>
+								<li>Scripts SQL de création et d’initialisation</li>
+								<li>Fichier de requêtes (algèbre relationnelle et SQL)</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+
+				<article class="gallery-section">
+					<h3>Illustration</h3>
+					<div class="image-gallery">
+						<figure class="gallery-item">
+							<img src="../../données/Comp 4/acema relation.png" alt="Schéma de la base de données">
+							<figcaption>Schéma relationnel de la base de donnée</figcaption>
+						</figure>
+						<figure class="gallery-item">
+							<img src="../../données/Comp 4/diagramme-comp4.png" alt="Schéma de la base de données">
+							<figcaption>Schéma conceptuel (MCD) de la base de données</figcaption>
+						</figure>
+						<figure class="gallery-item">
+							<img src="../../données/Comp 4/create.png" alt="Création des tables" style="max-width:500px; height:auto;">
+							<img src="../../données/Comp 4/create2.png" alt="Création des tables">
+							<figcaption>Création des tables</figcaption>
+						</figure>
+						<figure class="gallery-item">
+							<img src="../../données/Comp 4/init.png" alt="Insertion des données">
+							<figcaption>Insertion des données</figcaption>
+						</figure>
+						<figure class="gallery-item">
+							<img src="../../données/Comp 4/rq.png" alt="Requêtes SQL">
+							<figcaption>Exemple de requête SQL</figcaption>
+						</figure>
+						<figure class="gallery-item">
+							<img src="../../données/Comp 4/resultarq.png" alt="Requêtes SQL">
+							<figcaption>Exemple de résultat de requête SQL</figcaption>
+						</figure>
+					</div>
+				</article>
+
+				<article class="learning-section">
+					<h3>Compétences acquises</h3>
+					<div class="cards">
+						<div class="card">
+							<h4>Modélisation</h4>
+							<p>Conception d’un schéma conceptuel (MCD) adapté à un besoin métier réel.</p>
+						</div>
+						<div class="card">
+							<h4>Manipulation de données</h4>
+							<p>Création, initialisation et interrogation d’une base de données relationnelle avec PostgreSQL.</p>
+						</div>
+						<div class="card">
+							<h4>Requêtes avancées</h4>
+							<p>Écriture de requêtes complexes en algèbre relationnelle et SQL pour extraire et analyser des données.</p>
+						</div>
+					</div>
+				</article>
+
+				<article class="methodology-section">
+					<h3>Méthodologie</h3>
+					<div class="methodology-content">
+						<ol>
+							<li><strong>Analyse du besoin</strong> : Compréhension du contexte métier et identification des entités principales.</li>
+							<li><strong>Modélisation</strong> : Élaboration du MCD et transformation en schéma relationnel.</li>
+							<li><strong>Implémentation</strong> : Création des tables et insertion des données dans PostgreSQL.</li>
+							<li><strong>Requêtes</strong> : Rédaction de requêtes en algèbre relationnelle puis en SQL pour répondre aux besoins d’extraction d’informations.</li>
+						</ol>
+					</div>
+				</article>
+
+				<article class="results-section">
+					<h3>Résultats</h3>
+					<div class="results-content">
+						<ul>
+							<li>Base de données opérationnelle et conforme au MCD</li>
+							<li>Requêtes SQL et algèbre relationnelle fonctionnelles</li>
+							<li>Bonne compréhension de la modélisation et de l’optimisation des requêtes</li>
+							<li>Expérience pratique sur PostgreSQL</li>
+						</ul>
+						<div class="terminal" style="margin-top:2rem;">
+							<pre>--1. Les noms des compétitions de l'année 2025
+π_nomCompétition(σ_année(dateDébut) = 2025 (COMPETITION))
+
+--5. Les noms, prénoms et rangs des skieurs autrichiens qui ont participé à la compétition 'Saalbach-2025'
+π_nomSkieur, prénomSkieur, rang ((σ_nomCompétition = 'Saalbach-2025' (COMPETITION)) ⨝ CLASSEMENT ⨝ (σ_nationalité = 'Autrichien' (SKIEUR)))</pre>
+						</div>
+					</div>
+				</article>
+
+				<article class="conclusion-section">
+					<h3>Conclusion</h3>
+					<p>
+						Ce projet de gestion de base de données a été une expérience enrichissante qui m'a permis de mettre en pratique les concepts théoriques appris en cours. La conception du schéma de la base de données et l'implémentation des requêtes ont été particulièrement intéressantes, me permettant de comprendre l'importance d'une bonne modélisation des données.
+					</p>
+					<p>
+						Les défis principaux ont été la gestion des relations entre les tables et l'optimisation des requêtes complexes. J'ai particulièrement apprécié travailler avec PostgreSQL et découvrir ses fonctionnalités avancées.
+					</p>
+					<p>
+						Cette expérience m'a donné une meilleure compréhension de l'importance des bases de données dans le développement d'applications et m'a permis d'acquérir des compétences pratiques essentielles pour ma future carrière en informatique.
+					</p>
+				</article>
+
+			</div>
+		</section>
+	</main>
+</body>
+</html>

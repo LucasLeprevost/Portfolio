@@ -1,0 +1,151 @@
+Fiche Oral - Compétence 1 : Réaliser un développement d'application
+
+
+1. Introduction (2 min)
+Présentation personnelle
+Lucas Leprevost, 18 ans, étudiant en BUT Informatique
+
+Compétence 1 : "Réaliser un développement d'application"
+Objectif de la compétence
+Développer une application informatique en suivant une approche méthodique, de la conception à l'implémentation, en respectant les bonnes pratiques et les standards de qualité.
+
+2. Les 6 composantes de la compétence (8 min)
+
+
+2.1 Implémentation de conceptions simples (1.5 min)
+Ce que j'ai appris :
+
+lecture de diagrammes UML
+Programmation orientée objet (classes, objets, héritage)
+Utilisation de patrons de conception
+Exemple concret - SAE 2.01 :
+
+Implémentation de 2 classes principales : MPM et Tache
+Respect de la conception UML établie
+Application des principes OOP
+
+
+2.2 Élaboration de conception simple (1.5 min)
+Ce que j'ai appris :
+
+
+Création du mpm
+
+Analyse des besoins utilisateur
+Modélisation avec diagrammes de classes
+Conception de l'architecture logicielle
+Exemple concret :
+
+Analyse de la méthode MPM (Méthode des Potentiels Metra)
+Conception d'un modèle objet adapté
+Définition des relations entre les classes
+
+
+2.3 Qualité du code (1.5 min)
+Ce que j'ai appris :
+
+Convention de nommage AllMan
+Documentation claire du code
+Structuration et lisibilité
+Exemple concret :
+
+Code indenté et bien structuré
+Noms de variables explicites
+Commentaires pertinents
+
+
+2.4 Tests et validation des résultats (1.5 min)
+Ce que j'ai appris :
+
+Exemple d'un fichier de données de test avec les résultats attendus vs obtenus
+Description d'un cas de test spécifique (par exemple : "Test avec 5 tâches et 3 dépendances")
+Mention d'erreurs découvertes lors des tests et comment vous les avez corrigées
+
+Exemple concret :
+
+Tests avec différents jeux de données pour l'algorithme MPM
+Vérification des calculs de dates au plus tôt/plus tard
+Validation des marges calculées
+
+
+2.5 Développement d'UI respectant les normes (1 min)
+Ce que j'ai appris :
+pas de partie metier et ihm , on melange pas awt / swing
+
+
+Interface claire pour l'affichage des résultats
+Respect des standards HTML/CSS
+Formatage lisible des données (dates en JJ/MM)
+
+
+2.6 Autocritique et amélioration continue (1 min)
+Ce que j'ai appris :
+
+Évaluation objective de mon travail
+Identification des points d'amélioration
+Mise en place de solutions d'amélioration
+
+
+3. Projet phare : SAE 2.01 - Application MPM (4 min)
+Contexte du projet
+Objectif : Développement d'une application Java pour la gestion de projet
+Méthode : Implémentation de la Méthode des Potentiels Metra (MPM)
+Fonctionnalités : Calcul des dates au plus tôt, au plus tard, et des marges
+Technologies utilisées
+Langage : Java
+Outils : FileReader, ArrayList, Git
+Méthodes : Programmation orientée objet
+Réalisations concrètes
+Lecture de fichiers de données de tâches
+Algorithmes de calcul des dates optimales
+Gestion des dépendances entre tâches
+Interface de visualisation des résultats
+Défis rencontrés et solutions
+Défi : Complexité de l'algorithme MPM
+Solution : Décomposition en étapes simples et tests réguliers
+Résultat : Application fonctionnelle et fiable
+4. Bilan et perspectives (1 min)
+Compétences acquises
+Maîtrise du cycle de développement complet
+Capacité à concevoir et implémenter des solutions
+Respect des bonnes pratiques de développement
+Points d'amélioration identifiés
+Approfondissement des tests unitaires automatisés
+Amélioration de la gestion d'erreurs
+Optimisation des performances
+Perspectives d'évolution
+Application des acquis sur des projets plus complexes
+Intégration d'interfaces graphiques avancées
+Travail sur des applications multi-utilisateurs
+Points clés à retenir pour l'oral
+
+
+🎯 Messages importants
+La compétence 1 couvre tout le cycle de développement
+Importance de la méthodologie et des bonnes pratiques
+Lien étroit entre conception et implémentation
+
+💡 Conseils de présentation
+Utiliser les captures d'écran du portfolio pour illustrer
+Montrer le diagramme UML et le code associé
+Expliquer concrètement les calculs MPM si questionné
+
+⚡ Transitions fluides
+"Passons maintenant à..."
+"Cela m'amène à parler de..."
+"Pour illustrer concrètement..."
+
+❓ Questions probables
+"Expliquez la méthode MPM"
+"Quelles difficultés avez-vous rencontrées ?"
+"Comment assurez-vous la qualité de votre code ?"
+"Que feriez-vous différemment aujourd'hui ?"
+
+
+
+"Développement - Implémentation de patrons de conception et bonnes pratiques" signifie :
+Exemples concrets :
+Singleton : Une seule instance d'une classe (ex: gestionnaire de configuration)
+Factory : Créer des objets sans spécifier leur classe exacte
+Observer : Notifier automatiquement les changements d'état
+MVC : Séparer Modèle, Vue et Contrôleur

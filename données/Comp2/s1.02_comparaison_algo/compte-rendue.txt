@@ -1,0 +1,112 @@
+ 1:
+
+byte
+
+Taille : 8 bits (1 octet).
+Plage de valeurs : -128 à 127.
+Usage : Utilisé pour économiser de la mémoire dans des cas spécifiques, comme les
+tableaux contenant une grande quantité de données entières dans une plage réduite.
+
+short
+
+Taille : 16 bits (2 octets).
+Plage de valeurs : -32,768 à 32,767.
+Usage : Souvent utilisé pour économiser de la mémoire par rapport au type int, 
+surtout quand les valeurs restent dans une plage restreinte.
+
+int
+
+Taille : 32 bits (4 octets).
+Plage de valeurs : -2,147,483,648 à 2,147,483,647.
+Usage : Type de données entier par défaut en Java pour représenter des entiers 
+dans une majorité d’applications.
+
+long
+
+Taille : 64 bits (8 octets).
+Plage de valeurs : -9,223,372,036,854,775,808 à 9,223,372,036,854,775,807.
+Usage : Utilisé lorsque des entiers très grands (par exemple, pour des calculs 
+scientifiques ou des identifiants uniques) sont nécessaires.
+
+
+
+2:
+Je penses que le int est généralement plus performent car il est le plus adapté au processeur. 
+Si il faut travailler avec des grand nombres le long est a prioriser.
+
+
+ 3:
+ 
+ Oui car cela dépend de la grandeur des nombres dans la boucle.
+ 
+ Pour comparer dans les mêmes conditions les types short, int et long il faut faire un même
+ programme calculant le temps de calcul du code. Il faut exécuter le même prgramme avec des 
+ variables de types int,long,short et byte.
+
+
+4:
+
+int   = 5  ms
+short = 56 ms
+long  = 37 ms
+
+Le int est donc le plus rapide ensuite vient le long et finalement le short.
+
+/** SAE 1.02
+  * date   : le 22/11/2024
+  * auteur : Lucas Leprevost
+  */
+  
+import iut.algo.Clavier;
+
+public class CalculTemps
+{
+	public static void main (String [] args )
+	{
+		/*--------------*/
+		/* Données      */
+		/*--------------*/
+
+		long debut;
+		long fin;
+		long tempsExecution;
+		
+		int cpt1;
+		int cpt2;
+		int cpt3;
+		int cpt4;
+
+		/*--------------*/
+		/* Instructions */
+		/*--------------*/
+		
+		debut = System.nanoTime();
+		
+		cpt1 = 0;
+		while ( cpt1 < 100 )
+		{
+			cpt2 = 0;
+			while ( cpt2 < 100 )
+			{
+				cpt3 = 0;
+				while ( cpt3 < 100 )
+				{
+					cpt4 = 0;
+					while ( cpt4 < 100 )
+					{
+						cpt4 ++;
+					}
+					cpt3 ++;
+				}
+				cpt2++;
+			}
+			cpt1++;
+		}
+		
+		fin = System.nanoTime();
+		
+		tempsExecution = fin - debut;
+		System.out.println("le temps d'execution est égal à : " + tempsExecution/1000000 + " ms");
+	}
+}
+

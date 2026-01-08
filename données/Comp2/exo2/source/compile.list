@@ -1,0 +1,15 @@
+./pac/ProductionEmballage.java
+
+./pac/AtelierPeinture.java
+
+./pac/emballage/Cube.java
+./pac/emballage/Cylindre.java
+./pac/emballage/PrismeHexa.java
+./pac/emballage/Sphere.java
+
+./pac/inter/IPeinture.java
+./pac/inter/IFabrication.java
+
+-encoding utf8
+
+

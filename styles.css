@@ -1,0 +1,280 @@
+/* Reset CSS basique */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #edf7ff 0%, #ffffff 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(135deg, #f5f9ff 0%, #ffffff 100%);
+    border-bottom: 3px solid #2980b9;
+    padding: 1.2rem 5%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(41, 128, 185, 0.1);
+}
+
+.navbar::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #7fbaff, transparent);
+}
+
+.logo {
+    color: #1a5c88;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #2980b9, transparent);
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #1a5c88;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    padding: 0.7rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2980b9;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #7fbaff 0%, #2980b9 100%);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.contact {
+    background: linear-gradient(135deg, #2980b9 0%, #1a5c88 100%);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(41, 128, 185, 0.3);
+}
+
+/* Contenu principal */
+main {
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Présentation */
+.presentation {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(41, 128, 185, 0.1);
+    text-align: center;
+    border: 1px solid rgba(41, 128, 185, 0.1);
+}
+
+.presentation h2 {
+    font-size: 2rem;
+    color: #1a5c88;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #2980b9;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.presentation p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Section Compétences */
+.competences {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(41, 128, 185, 0.1);
+    border: 1px solid rgba(41, 128, 185, 0.1);
+}
+
+.competences h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a5c88;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #2980b9;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #2980b9;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #2980b9, #7fbaff);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(41, 128, 185, 0.2);
+}
+
+.card:hover::before {
+    transform: translateX(0);
+}
+
+.card h3 {
+    color: #1a5c88;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #edf7ff;
+    padding-bottom: 0.5rem;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+/* Section Tableau */
+.tableau {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(41, 128, 185, 0.1);
+    border: 1px solid rgba(41, 128, 185, 0.1);
+}
+
+.tableau h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1a5c88;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #2980b9;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(41, 128, 185, 0.1);
+    box-shadow: 0 4px 15px rgba(41, 128, 185, 0.05);
+}
+
+th, td {
+    padding: 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid #edf7ff;
+}
+
+thead th {
+    background: linear-gradient(135deg, #2980b9 0%, #1a5c88 100%);
+    color: white;
+    font-weight: 600;
+}
+
+tbody td:first-child {
+    text-align: left;
+    font-weight: 500;
+    background-color: #f5f9ff;
+}
+
+.oui {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.non {
+    color: #95a5a6;
+}
+
+tbody tr:hover {
+    background-color: #f5f9ff;
+}
+
+

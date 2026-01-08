@@ -1,0 +1,231 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #edf7ff 0%, #ffffff 100%);
+}
+
+/* Navigation styles */
+.navbar {
+    background: linear-gradient(135deg, #f5f9ff 0%, #ffffff 100%);
+    border-bottom: 3px solid #2980b9;
+    padding: 1.2rem 5%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(41, 128, 185, 0.1);
+}
+
+.navbar::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #7fbaff, transparent);
+}
+
+.logo {
+    color: #1a5c88;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #2980b9, transparent);
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #1a5c88 !important;
+    font-weight: 600 !important;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0.7rem 1.5rem !important;
+    text-decoration: none;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2980b9;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #7fbaff 0%, #2980b9 100%) !important;
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.contact {
+    background: linear-gradient(135deg, #2980b9 0%, #1a5c88 100%) !important;
+    color: white !important;
+    padding: 0.8rem 1.5rem !important;
+    border-radius: 25px !important;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(41, 128, 185, 0.3);
+}
+
+/* Main content layout */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Styles spécifiques pour la page projets */
+.presentation {
+    text-align: left;
+    padding: 3rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(41, 128, 185, 0.1);
+    border: 1px solid rgba(41, 128, 185, 0.1);
+}
+
+.presentation h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1a5c88;
+    border-bottom: 3px solid #2980b9;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.section-intro {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Cards grid layout */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #2980b9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #2980b9, #7fbaff);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(41, 128, 185, 0.2);
+}
+
+.card:hover::before {
+    transform: translateX(0);
+}
+
+.card h3 {
+    color: #1a5c88;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #edf7ff;
+    padding-bottom: 0.5rem;
+}
+
+.card p {
+    margin: 1rem 0;
+    min-height: 60px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.techno-tags {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: linear-gradient(135deg, #2980b9 0%, #1a5c88 100%);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(41, 128, 185, 0.2);
+}
